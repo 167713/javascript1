@@ -15,7 +15,7 @@
   })
 
   cw1.addEventListener("click", function () {
-    fetch('https://jsonplaceholder.typicode.com/posts')
+       answer.innerHTML="Loading..."; fetch('https://jsonplaceholder.typicode.com/posts')
       .then(response => response.json())
       .then(array => {
         console.log(array)
